@@ -1,0 +1,93 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+
+	body #page {
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		width: auto;
+		z-index: 3;
+	}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+	a:active {
+		background: none;
+	}
+
+img {
+	border: none;
+}
+
+/*Navbar starts here*/
+
+#navbar {
+	background-color: slategrey;
+	margin: 0;
+	min-height: 60px;
+	padding: 0;
+	width: auto;
+}
+
+#navbar div {
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 60px;
+	padding: 0 10px;
+}
+
+#navbar div a.logo {
+	display: block;
+	float: left;
+	height: 60px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	width: 100px;
+}
+
+#navbar div ul {
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#navbar div ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#navbar div ul li a {
+	color: #ffffff;
+	display: block;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 58px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+	text-align: center;
+	text-transform: capitalize;
+	width: auto;
+}
+
+#navbar div ul li a:hover {
+	background-color: #a700a9;
+}
+
+#navbar div ul li.selected a {
+	background-color: #000000;
+	color: lightgray;
+}
