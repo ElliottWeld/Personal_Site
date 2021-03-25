@@ -6,22 +6,22 @@ body {
 	width: auto;
 }
 
-	body #page {
-		margin: 0;
-		overflow: hidden;
-		padding: 0;
-		width: auto;
-		z-index: 3;
-	}
+body #page {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: auto;
+	z-index: 3;
+}
 
 a {
 	text-decoration: none;
 	outline: none;
 }
 
-	a:active {
-		background: none;
-	}
+a:active {
+	background: none;
+}
 
 img {
 	border: none;
@@ -32,7 +32,7 @@ img {
 #navbar {
 	background-color: slategrey;
 	margin: 0;
-	min-height: 60px;
+	min-height: 70px;
 	padding: 0;
 	width: auto;
 }
@@ -40,17 +40,24 @@ img {
 #navbar div {
 	margin: 0 auto;
 	max-width: 940px;
-	min-height: 60px;
+	min-height: 70px;
 	padding: 0 10px;
 }
 
-#navbar div a.logo {
+#navbar div a.namePlate {
 	display: block;
 	float: left;
-	height: 60px;
-	margin: 0 20px 0 0;
+	height: 70px;
+	margin: 0 20px 0 0px;
 	padding: 0;
-	width: 100px;
+	width: auto;
+
+	color: #000000;
+	font-family: 'Times New Roman';
+	font-size: 50px;
+	text-align:center;
+	text-transform: capitalize;
+	line-height: 68px;
 }
 
 #navbar div ul {
@@ -74,9 +81,9 @@ img {
 	display: block;
 	font-family: Arial;
 	font-size: 20px;
-	line-height: 58px;
+	line-height: 68px;
 	margin: 0;
-	min-height: 60px;
+	min-height: 70px;
 	padding: 0 24px;
 	text-align: center;
 	text-transform: capitalize;
@@ -84,10 +91,20 @@ img {
 }
 
 #navbar div ul li a:hover {
-	background-color: #a700a9;
+	background-color: #70aa91;
 }
 
 #navbar div ul li.selected a {
 	background-color: #000000;
 	color: lightgray;
+}
+
+/*---Body---*/
+
+#body {
+	background-color: #ffffff;
+	margin: 0;
+	min-height: 500px;
+	padding: 0;
+	width: 100%;
 }
