@@ -1,4 +1,8 @@
 
+:root{
+	--primary-color: slategrey;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -31,7 +35,7 @@ img {
 /*Navbar starts here*/
 
 #navbar {
-	background-color: slategrey;
+	background-color: var(--primary-color);
 	margin: 0;
 	min-height: 70px;
 	padding: 0;
@@ -108,27 +112,76 @@ img {
 	padding: 0;
 	width: 100%;
 }
-
+	/*Headder*/
 #body header {
-	display: inline-block;
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: auto;
+	margin: 0 auto;
+	max-width: 940px;
+	overflow: hidden;
+	padding: 0 10px;
+	position: relative;
 }
 
 #body header img.headshot {
 	background-color: #70aa91;
 	float: left;
 	position: relative;
-	margin: 10px 20px 0 100px;
+	margin: 20px 20px 20px 0;
 	width: 400px;
 }
 
 #body header h1 {
 	position: relative;
+	display: block;
 	float: right;
-	margin: 100px 100px 27px 0px;
-	width: 800px;
+	margin: 50px 0 0 0;
+	width: 520px;
 	text-align: left;
+	z-index: 60;
+}
+
+#body header p {
+	position: relative;
+	display: block;
+	float: right;
+	width: 520px;
+	text-align: left;
+	z-index: 60;
+}
+	/*Body*/
+
+#body div.body {
+	background-color: var(--primary-color);
+	overflow: hidden;
+	margin: 0px;
+	padding: 0;
+	width: 100%;
+}
+
+#body div.body div {
+	position:relative;
+	margin: 20px auto;
+	max-width: 940px;
+	overflow:hidden;
+}
+
+#body div.body div h2{
+	position:relative;
+	margin: 20px 0 20px;
+	padding: 0;
+	text-decoration: underline;
+	font-size: 30px;
+}
+
+#body div.body div div.internal{
+	position:relative;
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+	border: solid;
+}
+
+#body div.body div div.internal p{
+	position:relative;
+	margin: 0px;
+	padding: 10px;
 }
