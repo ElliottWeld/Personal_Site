@@ -185,3 +185,11 @@ img {
 	margin: 0px;
 	padding: 10px;
 }
+
+#body div.body div div.internal ul p#extrainfo {
+	position: relative;
+	margin: 0px;
+	padding: 10px;
+	font-size: 10px;
+	color: grey;
+}
