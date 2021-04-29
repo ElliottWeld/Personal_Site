@@ -1,110 +1,214 @@
 
-body {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: auto;
+:root {
+    --primary-color: slategrey;
 }
 
-body #page {
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	width: auto;
-	z-index: 3;
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    font-family: Arial;
 }
+
+    body #page {
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: auto;
+        z-index: 3;
+    }
 
 a {
-	text-decoration: none;
-	outline: none;
+    text-decoration: none;
+    outline: none;
 }
 
-a:active {
-	background: none;
-}
+    a:active {
+        background: none;
+    }
 
 img {
-	border: none;
+    border: none;
 }
 
 /*Navbar starts here*/
 
 #navbar {
-	background-color: slategrey;
-	margin: 0;
-	min-height: 70px;
-	padding: 0;
-	width: auto;
+    background-color: var(--primary-color);
+    margin: 0;
+    min-height: 70px;
+    padding: 0;
+    width: auto;
 }
 
-#navbar div {
-	margin: 0 auto;
-	max-width: 940px;
-	min-height: 70px;
-	padding: 0 10px;
-}
+    #navbar div {
+        margin: 0 auto;
+        max-width: 940px;
+        min-height: 70px;
+        padding: 0 10px;
+    }
 
-#navbar div a.namePlate {
-	display: block;
-	float: left;
-	height: 70px;
-	margin: 0 20px 0 0px;
-	padding: 0;
-	width: auto;
+        #navbar div a.namePlate {
+            display: block;
+            float: left;
+            height: 70px;
+            margin: 0 20px 0 0px;
+            padding: 0;
+            width: auto;
+            color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            text-align: center;
+            text-transform: capitalize;
+            line-height: 68px;
+        }
 
-	color: #000000;
-	font-family: 'Times New Roman';
-	font-size: 50px;
-	text-align:center;
-	text-transform: capitalize;
-	line-height: 68px;
-}
+        #navbar div ul {
+            display: inline-block;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
 
-#navbar div ul {
-	display: inline-block;
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: auto;
-}
+            #navbar div ul li {
+                float: left;
+                margin: 0;
+                padding: 0;
+                width: auto;
+            }
 
-#navbar div ul li {
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: auto;
-}
+                #navbar div ul li a {
+                    color: #ffffff;
+                    display: block;
+                    font-size: 20px;
+                    line-height: 68px;
+                    margin: 0;
+                    min-height: 70px;
+                    padding: 0 24px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    width: auto;
+                }
 
-#navbar div ul li a {
-	color: #ffffff;
-	display: block;
-	font-family: Arial;
-	font-size: 20px;
-	line-height: 68px;
-	margin: 0;
-	min-height: 70px;
-	padding: 0 24px;
-	text-align: center;
-	text-transform: capitalize;
-	width: auto;
-}
+                    #navbar div ul li a:hover {
+                        background-color: #70aa91;
+                    }
 
-#navbar div ul li a:hover {
-	background-color: #70aa91;
-}
-
-#navbar div ul li.selected a {
-	background-color: #000000;
-	color: lightgray;
-}
+                #navbar div ul li.selected a {
+                    background-color: #000000;
+                    color: lightgray;
+                }
 
 /*---Body---*/
 
 #body {
-	background-color: #ffffff;
-	margin: 0;
-	min-height: 500px;
-	padding: 0;
-	width: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    min-height: 500px;
+    padding: 0;
+    width: 100%;
 }
+    /*Header*/
+    #body header {
+        margin: 0 auto;
+        max-width: 940px;
+        overflow: hidden;
+        padding: 0 10px;
+        position: relative;
+    }
+
+        #body header img.headshot {
+            background-color: #70aa91;
+            float: left;
+            position: relative;
+            margin: 20px 20px 20px 0;
+            width: 400px;
+        }
+
+        #body header h1 {
+            position: relative;
+            display: block;
+            float: right;
+            margin: 50px 0 0 0;
+            width: 520px;
+            text-align: left;
+            z-index: 60;
+        }
+
+        #body header p {
+            position: relative;
+            display: block;
+            float: right;
+            width: 520px;
+            text-align: left;
+            z-index: 60;
+        }
+    /*Body*/
+
+    #body div.body {
+        background-color: var(--primary-color);
+        overflow: hidden;
+        margin: 20px auto;
+        padding: 0;
+        width: 100%;
+    }
+
+        #body div.body div {
+            position: relative;
+            margin: 20px auto;
+            max-width: 940px;
+            overflow: hidden;
+        }
+
+            #body div.body div h2 {
+                position: relative;
+                margin: 20px 0 20px;
+                padding: 0;
+                text-decoration: underline;
+                font-size: 30px;
+            }
+
+            #body div.body div div.internal {
+                position: relative;
+                background-color: white;
+                margin: 0px;
+                padding: 10px;
+                border: solid;
+            }
+
+                #body div.body div div.internal ul li {
+                    position: relative;
+                    margin: 0px;
+                    padding: 10px;
+                }
+
+                #body div.body div div.internal ul p#extrainfo {
+                    position: relative;
+                    margin: 0px;
+                    padding: 10px;
+                    font-size: 10px;
+                    color: grey;
+                }
+
+        /*Projects*/
+
+        #body div.body iframe {
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+            padding: 0;
+            max-width: 640px;
+            float: left;
+        }
+
+        #body div.body h2.Projects {
+            overflow: hidden;
+            text-align: left;
+            font-size: 25px;
+            float:right;
+            margin: 20px;
+            width: auto;
+        }
